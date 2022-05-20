@@ -4,7 +4,7 @@
 </script>
 
 <header>
-  <a href="{base}/" class:active={$page.url.pathname === '/'}>Available Classics</a>
+  <a href={base} class:active={$page.url.pathname === `${base}`}>Available Classics</a>
   <span class="big">&bull;</span>
   <a href="{base}/random" class:active={$page.url.pathname.includes('/random')}>Random</a>
   <span class="big">&bull;</span>
