@@ -1,17 +1,18 @@
 <script>
   import { page } from '$app/stores';
+  import { base } from '$app/paths';
 </script>
 
 <header>
-  <a href="/" class:active={$page.url.pathname === '/'}>Available Classics</a>
+  <a href="{base}/" class:active={$page.url.pathname === '/'}>Available Classics</a>
   <span class="big">&bull;</span>
-  <a href="/random" class:active={$page.url.pathname.includes('/random')}>Random</a>
+  <a href="{base}/random" class:active={$page.url.pathname.includes('/random')}>Random</a>
   <span class="big">&bull;</span>
-  <a href="/dailyExperiment" class:active={$page.url.pathname.includes('/dailyExperiment')}
+  <a href="{base}/dailyExperiment" class:active={$page.url.pathname.includes('/dailyExperiment')}
     >Daily Experiment</a
   >
   <span class="big">&bull;</span>
-  <a href="/about" class:active={$page.url.pathname.includes('/about')}>About</a>
+  <a href="{base}/about" class:active={$page.url.pathname.includes('/about')}>About</a>
 </header>
 
 <style>

@@ -18,7 +18,7 @@ const config = {
       default: true
     },
     paths: {
-      base: dev ? '/deep13' : ''
+      base:  process.env.NODE_ENV === 'production' ? '/deep13' : ''
     }
   }
 };
