@@ -1,6 +1,8 @@
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 
+const dev = "production" === 'development';
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   // Consult https://github.com/sveltejs/svelte-preprocess
@@ -14,10 +16,10 @@ const config = {
     }),
     prerender: {
       default: true
-    }
-    // paths: {
-    //   base: '/deep13'
-    // },
+    },
+    paths: {
+      base: dev ? '/deep13' : ''
+    },
   }
 };
 
