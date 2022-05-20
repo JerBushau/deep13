@@ -1,0 +1,1 @@
+import{r}from"./index-f02cbe16.js";function e(){const{subscribe:t}=r({},s=>{let n=()=>{};async function a(){const o=await(await fetch("https://raw.githubusercontent.com/JerBushau/gizmo/main/mst-info.json")).json();s(o)}return a(),n});return{subscribe:t}}const m=e();export{m};

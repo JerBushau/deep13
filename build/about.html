@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="content-security-policy" content=""><title>About</title>
+	<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-52aca4ff.css">
+	<link rel="stylesheet" href="/_app/assets/pages/about.svelte-65603b76.css">
+	<link rel="modulepreload" href="/_app/start-0b5f729e.js">
+	<link rel="modulepreload" href="/_app/chunks/index-5863de00.js">
+	<link rel="modulepreload" href="/_app/chunks/index-f02cbe16.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-85828de2.js">
+	<link rel="modulepreload" href="/_app/chunks/store-c490a43a.js">
+	<link rel="modulepreload" href="/_app/pages/about.svelte-ddaba2a3.js">
+    <style>
+      html,
+      body {
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 0.12em;
+        display: flex;
+        flex-direction: column;
+        background: #eee;
+      }
+      h1,
+      h2,
+      h3 {
+        font-weight: 200;
+        text-align: center;
+      }
+      a {
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+
+
+<div class="container svelte-1q137ha"><header class="svelte-rqz2yt"><a href="/" class="svelte-rqz2yt">Available Classics</a>
+  <span class="big svelte-rqz2yt">•</span>
+  <a href="/random" class="svelte-rqz2yt">Random</a>
+  <span class="big svelte-rqz2yt">•</span>
+  <a href="/dailyExperiment" class="svelte-rqz2yt">Daily Experiment</a>
+  <span class="big svelte-rqz2yt">•</span>
+  <a href="/about" class="svelte-rqz2yt active">About</a>
+</header>
+  <main class="content svelte-1q137ha">
+
+<section class="svelte-1hr1mvg"><h1 class="svelte-1hr1mvg">Why does this exist?</h1>
+  <p class="svelte-1hr1mvg">This website exists for my own personal use and from a desire to learn about SvelteKit and
+    Github Actions. But I would be pleased if it turns out to be useful for others as well.
+    <br>
+    <br>
+    The function of this tool is to quickly search the freely available classic episodes from the
+    <a href="https://www.gizmoplex.com/" class="svelte-1hr1mvg">Gizmoplex</a>
+    and to replace features that I miss from club-mst3k.com, like random episode selection and a daily
+    &quot;Watch It Together&quot; episode.
+    <br>
+    <br>
+    I have no intention to monetize, take donations, or otherwise profit from this website in anyway.
+    I will be happy to remove it when it is no longer needed or if I am asked to do so.
+  </p>
+  <h1 class="svelte-1hr1mvg">How does this work?</h1>
+  <p class="svelte-1hr1mvg">Data is collected from the <a href="https://www.gizmoplex.com/" class="svelte-1hr1mvg">Gizmoplex</a> using a scheduled Github Action that
+    runs a node.js script. This occurs once per day at around 9<small class="time svelte-1hr1mvg">AM</small> EST. It
+    checks for newly available classic episodes and selects a new &quot;Daily Experiment&quot;. This website displays
+    the collected data.
+  </p>
+</section></main>
+  <footer class="svelte-1lex4z4"><p>Last Updated: undefined</p>
+  <small>🪦 R.I.P. club-mst3k</small>
+</footer>
+</div>
+
+
+		<script type="module" data-hydrate="6ex8wn">
+		import { start } from "/_app/start-0b5f729e.js";
+		start({
+			target: document.querySelector('[data-hydrate="6ex8wn"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/_app/pages/__layout.svelte-85828de2.js"),
+						import("/_app/pages/about.svelte-ddaba2a3.js")
+				],
+				params: {},
+				routeId: "about"
+			}
+		});
+	</script></div>
+  </body>
+</html>
