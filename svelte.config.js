@@ -1,7 +1,7 @@
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 
-const dev = "production" === 'development';
+const dev = 'production' === 'development';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -19,7 +19,7 @@ const config = {
     },
     paths: {
       base: dev ? '/deep13' : ''
-    },
+    }
   }
 };
 
