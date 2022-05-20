@@ -9,15 +9,15 @@ const config = {
 
   kit: {
     adapter: adapter({
-      pages: 'public/build',
-      assets: 'public/build'
+      pages: 'docs',
+      assets: 'docs'
     }),
     prerender: {
 			default: true
 		},
-    // paths: {
-    //   base: '/deep13'
-    // }
+    paths: {
+      base: '/deep13'
+    },
   }
 };
 
