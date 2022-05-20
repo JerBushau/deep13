@@ -13,11 +13,11 @@ const config = {
       assets: 'docs'
     }),
     prerender: {
-			default: true
-		},
-    paths: {
-      base: '/deep13'
-    },
+      default: true
+    }
+    // paths: {
+    //   base: '/deep13'
+    // },
   }
 };
 
